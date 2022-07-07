@@ -19,7 +19,7 @@ public class AnotherSpringTransactionImpl {
     }
 
     /**
-     * <h2>不同一个类中, 一个不标注事务的方法去调用 transactional 的方法, 事务生效</h2>
+     * <h2>不同一个类中, 一个不标注事务的方法去调用标注 transactional 的方法, 事务生效</h2>
      */
     public void TransactionalCanRollback() {
         springTransaction.anotherOneSaveMethod();
